@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6543ab10-3e00-4eb6-b7a1-cf7c83d41230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppendA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppendAnimals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChangeElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Colors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompareLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DoubleItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Doubling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IncrementElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaterialReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReverseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SumElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Summing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SwapElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Third.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Unique.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day-01/src/hu/greenfox/bleaksmile/GuessTheNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-01/src/hu/greenfox/bleaksmile/GuessTheNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaTutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaTutorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Unique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Unique.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7554" />
+          <entry key="java" value="7778" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7554" />
+          <entry key="JAVA" value="7778" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -144,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Unique.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="170">
+              <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -243,7 +218,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540933509211" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540935268094" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,18 +301,18 @@
       <workItem from="1540844186376" duration="3046000" />
       <workItem from="1540889850324" duration="125000" />
       <workItem from="1540890017876" duration="26493000" />
-      <workItem from="1540931093654" duration="2404000" />
+      <workItem from="1540931093654" duration="3983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32068000" />
+    <option name="totallyTimeSpent" value="33647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,8 +321,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33002833" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22804533" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33569404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -384,7 +359,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Unique.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -567,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Unique.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="170">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
         </state>
       </provider>
     </entry>

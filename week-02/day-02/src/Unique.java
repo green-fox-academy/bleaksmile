@@ -8,7 +8,7 @@ public class Unique {
 
         //  Example
 
-        System.out.println(unique(new int[] {1, 0, 1, 11, 0, 61}));
+        System.out.println(unique(new int[] {8, 1,10, 8, 0, 1, 11, 8, 1, 22,8, 61,8}));
         //  should print: `[1, 11, 34, 52, 61]`
 
     }
@@ -21,7 +21,8 @@ public class Unique {
             for (int j = i+1; j <array.length ; j++) {          // one more iteration needed as we compare 2 numbers with diff indexes ie. is array[2] == array[3]?
                 if(array[i]==array[j]){                          // that's why j starts from i+1 - we don't compare the number to itself
 
-                counter++;                                      // if there is a duplication, counter increments by 1
+                counter++;                                          // if there is a duplication, counter increments by 1
+                break;                                              //jumps to outer loop in case of duplication - by this we can handle cases when an element occurs 3,4,5..times in the array
                 }
             }
 
