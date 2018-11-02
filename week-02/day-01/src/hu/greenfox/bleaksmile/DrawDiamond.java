@@ -21,7 +21,7 @@ public class DrawDiamond {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
-        for (int i=1; i<=number/2+1; i++){
+        for (int i=1; i<=number/2; i++){
             for (int j=i; j<number; j++){
                 System.out.print(" ");
             }
@@ -31,7 +31,7 @@ public class DrawDiamond {
             System.out.print("\n");
 
         }
-        for (int l=number/2; l>0; l--){
+        for (int l=number/2+1; l>0; l--){
             for (int m=l; m<number; m++) {
                 System.out.print(" ");
             }
