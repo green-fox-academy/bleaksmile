@@ -12,15 +12,43 @@ public class Substring {
 //  should print: `-1
         public static void main(String[] args) {
 
-            System.out.println(substring("I am searching here", "search"));
+            System.out.println(contains("Imtsoearchin", "tea"));
         }
 
-        public static int substring(String input1, String input2) {
+        /*public static int substring(String input1, String input2) {
 
             if (input1.contains(input2)) {
                 return (input1.indexOf(input2));
             }
 
             return -1;
+        }*/
+
+      //  public static int substring(String input1, String input2){
+
+
+        //}
+        public static int contains (String a, String b){
+            int j=0;
+            int k =0;
+            int index;
+
+                for (int i = 0; i < a.length(); i++) {
+                   if (j < b.length()) {
+                       char c = b.charAt(j);
+                       char d = a.charAt(i);
+                       if (c == d) {
+                           j++;
+                           k = i;
+                       }
+                   }
+                }
+
+                if(j==0){
+                    return -1;
+                }
+
+            k = k- b.length()+1;
+            return k;
         }
 }

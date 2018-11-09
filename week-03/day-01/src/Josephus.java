@@ -9,35 +9,39 @@ public class Josephus {
         josephus(members);
     }
 
-    public static void josephus(int a){
-        ArrayList < Integer > arrayList = new ArrayList<>();
-        for (int i = 0; i < a ; i++) {
-            arrayList.add(8);
-        }
-
-        for (int m = 0; m <a-1 ; m++) {
-
-            for (int j = 0; j <a; j += 2) {
-                System.out.println(arrayList.get(j));
-                if ((j + 1) < arrayList.size()) {
-                    arrayList.set(j + 1, 1);
-                    System.out.println(arrayList.get(j + 1));
-                }
-            }
-            System.out.println("--------");
-            for (int k = 0; k <a; k+=3 ) {
-                System.out.println(arrayList.get(k));
-                System.out.println(arrayList.get(k+1));
-                if ((k + 3) < arrayList.size()) {
-                    arrayList.set(k + 2, 1);
-                    System.out.println(arrayList.get(k + 1));
-                }
-
-            }
+    public static void josephus(int a) {
+        int winning = 0;
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int i = 1; i <= a; i++) {
+            arrayList.add(i);
 
         }
+        int[] array = new int[10];
+        System.out.println(array);
+        while (arrayList.size() >= 2) {
+
+            if (arrayList.size() % 2 == 0) {
+                for (int i = 0; i < arrayList.size(); i++) {
+                    // System.out.print(arrayList.get(i)+ " ");
+                    arrayList.remove(i + 1);
+
+                }
+                winning = arrayList.get(0);
+
+            } else {
+                for (int i = 0; i < arrayList.size(); i++) {
+                    // System.out.print(arrayList.get(i) + " ");
+                    if (arrayList.size() > i + 1) {
+                        arrayList.remove(i + 1);
+                    }
+                }
+                arrayList.add(0, arrayList.get(arrayList.size() - 1));
+                arrayList.remove(arrayList.size() - 1);
+            }
+        }
+        System.out.println("The winning position is " + winning);
     }
-
-
 }
+
+
 

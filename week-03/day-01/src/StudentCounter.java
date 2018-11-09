@@ -51,10 +51,10 @@ public class StudentCounter {
         //  - Sum the age of people who have lass than 5 candies
         for (int i = 0; i <map.size(); i++) {
 
-            if ((Integer)map.get(i).get("candies") > 4) {
+            if ((Integer)map.get(i).get("candies") > 4){
                 names += map.get(i).get("name") + " ";
             }
-            if((Integer) map.get(i).get("candies") <5){
+            if ((Integer) map.get(i).get("candies") < 5){
                 sumAge += Double.valueOf(map.get(i).get("age").toString());
             }
         }
