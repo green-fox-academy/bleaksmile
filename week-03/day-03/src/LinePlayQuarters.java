@@ -9,7 +9,7 @@ public class LinePlayQuarters {
     public static void mainDraw(Graphics graphics) {
         //1 XP Divide the canvas into 4/16/64 equal parts and repeat the line play pattern in each quarter
 
-        int resolution = 25;
+        int resolution = 36;
         int line = (int) (sqrt(resolution));
         int c = WIDTH / resolution / 10;
         int b = 0;
@@ -27,7 +27,6 @@ public class LinePlayQuarters {
 
                 }
                 a += WIDTH / line;
-                //  b += WIDTH/line;
             }
             a = WIDTH / resolution / 10;
             b += WIDTH / line;
