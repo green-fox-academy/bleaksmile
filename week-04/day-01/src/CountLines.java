@@ -14,7 +14,7 @@ public class CountLines {
 
     public static int lineCounter(String file) {
         try {
-            Path filepath = Paths.get("my_file.txt");
+            Path filepath = Paths.get(file);
             List <String> lines = Files.readAllLines(filepath);
             int counter =0;
             for (String line : lines) {
