@@ -37,6 +37,5 @@ public class ReversedLines {
             exep.printStackTrace();
             System.out.println("file can not be written");
         }
-        System.out.println(reversedArray);
     }
 }
