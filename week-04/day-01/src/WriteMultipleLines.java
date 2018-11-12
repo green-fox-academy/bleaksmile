@@ -1,7 +1,7 @@
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.*;
 
 public class WriteMultipleLines {
 // Create a function that takes 3 parameters: a path, a word and a number,
@@ -19,12 +19,12 @@ public class WriteMultipleLines {
 
     public static void multiLineWriter(String path, String word, int number) {
         try {
-            ArrayList <String> arrayList = new ArrayList<>();
+            List<String> list = new ArrayList<>();
             for (int i = 0; i <number ; i++) {
-                arrayList.add(word);
+                list.add(word);
             }
             Path filepath = Paths.get(path);
-            Files.write(filepath, arrayList);
+            Files.write(filepath, list);
 
         } catch (Exception e) {
             System.out.println("Could not write the file");
