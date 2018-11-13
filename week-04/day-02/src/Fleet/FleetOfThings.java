@@ -7,7 +7,7 @@ public class FleetOfThings {
     public static void main(String[] args) {
         Fleet fleet = new Fleet();
 
-       
+
         Thing milk = new Thing("Get milk");
         Thing obstacle = new Thing ("Remove the obstacles");
         Thing stand = new Thing ("Stand up");
@@ -27,6 +27,6 @@ public class FleetOfThings {
         // 4. [x] Eat lunch
 
 
-        System.out.println(fleet.toString());
+        System.out.println(fleet);
     }
 }
