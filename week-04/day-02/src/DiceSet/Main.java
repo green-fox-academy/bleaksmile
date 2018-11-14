@@ -12,9 +12,6 @@ Your task is to roll the dices until all of the dices are 6
 public class Main {
     public static void main(String[] args) {
         DiceSet myDices = new DiceSet();
-        myDices.roll();
-        myDices.getCurrent();
-
 
         for (int i = 0; i < myDices.dices.length; i++) {
             boolean notSix = true;
