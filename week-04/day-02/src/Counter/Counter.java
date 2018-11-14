@@ -20,7 +20,7 @@ public class Counter {
     }
 
     public void add() {
-        changingValue+= 1;
+        changingValue += 1;
 
     }
 
