@@ -7,12 +7,11 @@ public class FleetOfThings {
     public static void main(String[] args) {
         Fleet fleet = new Fleet();
 
-
         Thing milk = new Thing("Get milk");
-        Thing obstacle = new Thing ("Remove the obstacles");
-        Thing stand = new Thing ("Stand up");
+        Thing obstacle = new Thing("Remove the obstacles");
+        Thing stand = new Thing("Stand up");
         stand.complete();
-        Thing eat = new Thing("Eat lunch" );
+        Thing eat = new Thing("Eat lunch");
         eat.complete();
         fleet.add(milk);
         fleet.add(obstacle);
