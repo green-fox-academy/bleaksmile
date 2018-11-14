@@ -3,7 +3,7 @@ package Sharpie;
 public class Sharpie {
     String color;
     float width;
-    private float inkAmount = 100;
+    private static float inkAmount = 100;
 
     /*
     Create Sharpie class
@@ -22,7 +22,15 @@ public class Sharpie {
         return inkAmount -= 10;
     }
 
-    public float getInkAmount() {
+    public static float getInkAmount() {
         return inkAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "Sharpie{" +
+                "color='" + color + '\'' +
+                ", width=" + width +
+                '}';
     }
 }
