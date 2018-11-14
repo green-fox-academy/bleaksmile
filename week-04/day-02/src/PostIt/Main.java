@@ -11,7 +11,7 @@ package PostIt;
 
 public class Main {
     public static void main(String[] args) {
-        PostIt postOne = new PostIt("orange","Idea 1", "blue");
+        PostIt postOne = new PostIt("orange", "Idea 1", "blue");
         PostIt postTwo = new PostIt("pink", "Aweseome", "black");
         PostIt postThree = new PostIt("yellow", "Superb", "green");
 
