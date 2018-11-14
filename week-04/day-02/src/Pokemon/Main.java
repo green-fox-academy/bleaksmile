@@ -18,8 +18,8 @@ public class Main {
         // Which pokemon should Ash use?
 
         String choosenPokemon = "";
-        for (Pokemon poki: pokemonOfAsh) {
-            if (poki.isEffectiveAgainst(wildPokemon)){
+        for (Pokemon poki : pokemonOfAsh) {
+            if (poki.isEffectiveAgainst(wildPokemon)) {
                 choosenPokemon = poki.name;
             }
         }
