@@ -5,19 +5,27 @@ import java.awt.*;
 import static java.lang.Math.sqrt;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Circles {
+public class Hexagons {
 
     public static void mainDraw(Graphics graphics) {
-    circles(graphics,0,0,600);
+        hexagon(graphics, 600,600, 330.0);
     }
-    public static void circles (Graphics graphics, int x, int y, int radius ){
-        if(radius<10){
+    public static void hexagon (Graphics graphics, int x, int y, double sidelength){
+        if (sidelength<2){
             return;
         }
-        graphics.drawOval(x,y,radius,radius);
-        circles(graphics,x+radius/4,y,radius/2);
-        circles(graphics,x,y+radius/3,radius/2);
-        circles(graphics,x+radius/2,y+radius/3,radius/2);
+        int height = (int) (sidelength / 2 * sqrt(3));
+        int sideInt = (int) sidelength;
+        int halfSide = sideInt / 2;
+        int[] arr1 = {x, x + sideInt, x + sideInt + halfSide, x + sideInt, x, x - halfSide};
+        int[] arr2 = {y, y, y - height, y - 2 * height, y - 2 * height, y - height};
+        graphics.drawPolygon(arr1, arr2, 6);
+        hexagon(graphics,x,y,sidelength/3);
+        hexagon(graphics,x+(int)sidelength*2/3,y,sidelength/3);
+        hexagon(graphics,x-(int)sidelength/3,y-height*2/3,sidelength/3);
+        hexagon(graphics,x,y-height*4/3,sidelength/3);
+        hexagon(graphics,x+(int)sidelength*2/3,y-height*4/3,sidelength/3);
+        hexagon(graphics,x+(int)sidelength,y-height*2/3,sidelength/3);
 
     }
 
@@ -45,3 +53,4 @@ public class Circles {
     }
 
 }
+
