@@ -29,8 +29,8 @@ public class Armada {
 
   /*  public boolean war(Armada opponentArmada) {
         int armadaScore = armada.size()-1;
-        int oponentScore = opponentArmada.getSize()-1;
-        while(armadaScore ==-1 || oponentScore == -1){
+        int opponentScore = opponentArmada.getSize()-1;
+        while(armadaScore ==-1 && opponentScore == -1){
                 if(armada.get(armadaScore).battle(opponentArmada.getShip(oponentScore))) {
                     oponentScore --;
                 } else {

@@ -69,7 +69,7 @@ public class Ship {
     public Pirate getCaptain() {
         return captain;
     }
-    
+
     public String toString() {
         StringBuilder stringToReturn = new StringBuilder();
         stringToReturn.append("Ship{");
