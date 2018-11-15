@@ -8,16 +8,17 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 public class Circles {
 
     public static void mainDraw(Graphics graphics) {
-    circles(graphics,0,0,600);
+        circles(graphics, 0, 0, 600);
     }
-    public static void circles (Graphics graphics, int x, int y, int radius ){
-        if(radius<10){
+
+    public static void circles(Graphics graphics, int x, int y, int radius) {
+        if (radius < 10) {
             return;
         }
-        graphics.drawOval(x,y,radius,radius);
-        circles(graphics,x+radius/4,y,radius/2);
-        circles(graphics,x,y+radius/3,radius/2);
-        circles(graphics,x+radius/2,y+radius/3,radius/2);
+        graphics.drawOval(x, y, radius, radius);
+        circles(graphics, x + radius / 4, y, radius / 2);
+        circles(graphics, x, y + radius / 3, radius / 2);
+        circles(graphics, x + radius / 2, y + radius / 3, radius / 2);
 
     }
 
