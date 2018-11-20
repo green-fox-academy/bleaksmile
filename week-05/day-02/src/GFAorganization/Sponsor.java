@@ -1,4 +1,4 @@
-package Exercise;
+package GFAorganization;
 
 public class Sponsor extends Person {
     String company;

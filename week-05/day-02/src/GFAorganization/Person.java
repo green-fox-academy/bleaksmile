@@ -1,4 +1,4 @@
-package Exercise;
+package GFAorganization;
 
 public class Person {
     private String name;

@@ -1,4 +1,4 @@
-package Exercise;
+package GFAorganization;
 
 public class Student extends Person {
     private String previousOrganization;
