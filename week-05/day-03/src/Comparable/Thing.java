@@ -26,11 +26,11 @@ public class Thing implements Comparable<Thing> {
     @Override
     public int compareTo(Thing o) {
         if (this.completed == o.completed) {
-            return this.name.charAt(0) - o.name.charAt(0);
+            return this.name.compareTo(o.name);
         } else if (this.completed) {
-            return 1;
-        } else {
             return -1;
+        } else {
+            return 1;
         }
     }
 }

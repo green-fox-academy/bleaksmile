@@ -13,14 +13,19 @@ public class FleetOfThings {
         Thing stand = new Thing("Stand up");
         stand.complete();
         Thing eat = new Thing("Eat lunch");
+        Thing listen2 = new Thing("Listen to radio");
         Thing listen = new Thing ("Listen to music");
+
         listen.complete();
         //eat.complete();
+        fleet.add(listen2);
+       // listen2.complete();
         fleet.add(milk);
         fleet.add(obstacle);
         fleet.add(stand);
         fleet.add(eat);
         fleet.add(listen);
+
         System.out.println(fleet);
         System.out.println();
 
