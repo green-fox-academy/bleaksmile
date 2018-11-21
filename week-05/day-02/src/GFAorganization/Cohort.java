@@ -22,7 +22,7 @@ public class Cohort {
         mentors.add(mentor);
     }
 
-    public void info(){
+    public void info() {
         System.out.println("The " + this.name + " cohort has " + students.size() + " students and " + mentors.size() + " mentors.");
     }
 }

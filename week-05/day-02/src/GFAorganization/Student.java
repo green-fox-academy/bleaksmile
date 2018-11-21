@@ -5,7 +5,7 @@ public class Student extends Person {
     private int skippedDays;
 
     public Student(String name, int age, String gender, String previousOrganization) {
-        super(name,age, gender);
+        super(name, age, gender);
         this.previousOrganization = previousOrganization;
         this.skippedDays = 0;
     }
@@ -13,11 +13,11 @@ public class Student extends Person {
     public Student() {
         super();
         this.previousOrganization = "The School of Life";
-        this.skippedDays =0;
+        this.skippedDays = 0;
     }
 
     public void introduce() {
-        System.out.println("Hi, I'm " + getName() + ", a " + getAge() + " year old " + getGender() + " from " + previousOrganization + " who skipped " + skippedDays +  " from the course already.");
+        System.out.println("Hi, I'm " + getName() + ", a " + getAge() + " year old " + getGender() + " from " + previousOrganization + " who skipped " + skippedDays + " from the course already.");
     }
 
     public void getGoal() {
