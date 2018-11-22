@@ -25,13 +25,8 @@ class AnimalTest {
   void playTester(){
     myAnimal.play();
     assertEquals(51,myAnimal.hunger);
-  }
-  @Test
-  void playTester2(){
-    myAnimal.play();
     assertEquals(51,myAnimal.thirst);
   }
-
 
 
 }
