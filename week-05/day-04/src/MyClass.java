@@ -1,5 +1,3 @@
-package Sum;
-
 import java.util.ArrayList;
 
 public class MyClass {
