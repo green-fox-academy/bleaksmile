@@ -1,6 +1,8 @@
 package Comparable;
 
-public class Domino implements Comparable<Domino>{
+import Printable.Printable;
+
+public class Domino implements Comparable<Domino>, Printable {
     private final int left;
     private final int right;
 
@@ -25,5 +27,10 @@ public class Domino implements Comparable<Domino>{
     @Override
     public int compareTo(Domino domi) {
         return this.left-domi.left;
+    }
+
+    @Override
+    public void printAllFields() {
+        System.out.println("["+left + "|" + right+"]");
     }
 }

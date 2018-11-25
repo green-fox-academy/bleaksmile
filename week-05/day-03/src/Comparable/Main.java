@@ -1,15 +1,20 @@
 package Comparable;
+import Printable.Printable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         List<Domino> dominoes = initializeDominoes();
         // You have the list of Dominoes
         // Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides
         // eg: [2, 4], [4, 3], [3, 5] ...
 
+        for(Domino d: dominoes){
+            d.printAllFields();
+        }
         Collections.sort(dominoes);
         System.out.print(dominoes);
 
@@ -25,4 +30,5 @@ public class Main {
         dominoes.add(new Domino(7, 1));
         return dominoes;
     }
+
 }

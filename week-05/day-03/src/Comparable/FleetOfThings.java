@@ -26,6 +26,10 @@ public class FleetOfThings {
         fleet.add(eat);
         fleet.add(listen);
 
+        for (Thing t : fleet.getThings()){
+            t.printAllFields();
+        }
+
         System.out.println(fleet);
         System.out.println();
 
