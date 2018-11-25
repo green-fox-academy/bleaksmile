@@ -13,14 +13,6 @@ public class Plant {
         this.minWater = minWater;
     }
 
-    public void setWaterAmount(double waterAmount) {
-        this.waterAmount = waterAmount;
-    }
-
-    public double getWaterAmount() {
-        return waterAmount;
-    }
-
     public String getColor() {
         return color;
     }
@@ -31,15 +23,10 @@ public class Plant {
 
     public void watering(double water) {
         waterAmount += water * absorbLevel;
-
     }
 
     public String toString() {
-        if (needsWater()) {
-            return "The " + getColor() + " " + getClass().getSimpleName() + " needs water.";
-        } else {
-            return "The " + getColor() + " " + getClass().getSimpleName() + " does not need water.";
-        }
+        return "The " + getColor() + " " + getClass().getSimpleName() + (needsWater() ? " needs" : " doesn't need") + " water.";
     }
 
 }
