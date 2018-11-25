@@ -17,8 +17,9 @@ public class Circles {
         }
         graphics.drawOval(x, y, radius, radius);
         circles(graphics, x + radius / 4, y, radius / 2);
-        circles(graphics, x, y + radius / 3, radius / 2);
-        circles(graphics, x + radius / 2, y + radius / 3, radius / 2);
+
+        circles(graphics, x+radius/27, y + radius*3/8, radius / 2);
+        circles(graphics, x + radius /27, y + radius*3/8, radius / 2);
 
     }
 
