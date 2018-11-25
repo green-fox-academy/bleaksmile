@@ -37,8 +37,8 @@ public class Graphic {
 
 
     // Don't touch the code below
-    static int WIDTH = 900;
-    static int HEIGHT = 900;
+    static int WIDTH = 729;
+    static int HEIGHT = 729;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
