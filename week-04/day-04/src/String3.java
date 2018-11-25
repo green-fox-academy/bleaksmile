@@ -9,11 +9,10 @@ public class String3 {
         if (text.length() == 0) {
             return "";
         }
-        String output = Character.toString(text.charAt(0));
         if (text.length() == 1) {
-            return output;
+            return text;
         } else {
-            return output + '*' + textWithAsterisk(text.substring(1));
+            return text.charAt(0) + "*" + textWithAsterisk(text.substring(1));
         }
     }
 }
