@@ -1,0 +1,119 @@
+body{
+    margin: 50px auto auto 100px;
+}
+a{
+    text-decoration: none;
+    border-bottom: none;
+    color:#01bcd4;
+}
+#shop{
+    text-decoration: none;
+    font-size: 28px;
+    color:#01bcd4;
+    font-weight: bold;
+    font-family: Helvetica;
+    margin: auto 100px auto auto;
+    border-bottom: 2px solid #01bcd4 ;
+    padding: 2px;
+}
+
+button{
+    margin: 30px 10px auto auto;
+    background-color: #f44336;
+    color: white;
+    border-width: 0 0 0 0;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 0.3em;
+}
+
+
+#searchfor{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px auto auto auto;
+    color: #ff7962;
+
+}
+
+#search{
+    font-weight: bold;
+    outline: none;
+    font-family: Helvetica;
+    padding: 7px;
+    font-size: 20px;
+    width: 50%;
+    height: 34px;
+    border: 2px solid;
+    border-color:#f44336; ;
+    border-radius: 4px;
+}
+
+input[type=submit]{
+    border-width: 0 0 0 0;
+    margin: auto auto auto 20px;
+    height: 44px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+    width: 80px;
+    font-size: 20px;
+    font-family: Arial;
+
+}
+
+#avg{
+    margin: 20px auto auto auto;
+    font-family:  Arial;
+    font-size: 20px ;
+    font-weight: bold;
+}
+
+#mostExpensive{
+    margin: 20px auto auto auto;
+    font-family:  Arial;
+    font-size: 20px ;
+    font-weight: bold;
+}
+table{
+    background-color: white;
+    margin: 20px 0 0 0;
+}
+th{
+    padding: 22px;
+}
+thead{
+    background-color: cyan;
+    color: black;
+    font-family: Helvetica;
+    font-size: 20px;
+    border: 6px white solid;
+}
+
+td{
+    padding: 2%;
+}
+#name, #description,#price,#quantity{
+    font-family: Helvetica;
+}
+#name{
+    font-weight: bold;
+    font-size: 16px;
+}
+#description{
+    font-size: 14px;
+
+}
+#quantity{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+#price{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
