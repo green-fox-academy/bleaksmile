@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter</title>
+</head>
+<body>
+<form action="https://newsletter-ws.herokuapp.com/signup" method="POST">
+    <label>Name</label>
+    <div>
+        <input type="text" name="name"required pattern=".{5,}" title="Five or more characters"/>
+    </div>
+    <label>Email</label>
+    <div>
+        <input type="email" name="email" placeholder="Enter your email"  required/>
+    </div>
+    <input type="submit">
+</form>
+
+</body>
+</html>

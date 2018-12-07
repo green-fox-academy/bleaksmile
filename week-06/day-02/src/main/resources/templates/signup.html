@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signupStyle.css">
+    <title>Sign up</title>
+</head>
+<body>
+<div id="content">
+    <div id="signup">
+    <form autocomplete="off" action="https://newsletter-ws.herokuapp.com/register" method="POST">
+        <p>Sign up</p>
+        <div>
+            <input type="text" name="name" id="name" placeholder="Username" autofocus>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="password" name="passwordConfirmation" id="passwordConfirmation"  placeholder="Retype password">
+        </div>
+        <input type="submit" value="SIGN ME UP">
+    </form>
+    </div>
+    <div id="or">
+        <button id="button1"> OR </button>
+    </div>
+    <div id="links">
+        <div>
+            <button id="facebook"> Log in with facebook </button>
+        </div>
+        <div>
+            <button id="twitter"> Log in with Twitter </button>
+        </div>
+        <div>
+            <button id="google"> Log in with Google+ </button>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="password.js" ></script>
+</body>
+</html>

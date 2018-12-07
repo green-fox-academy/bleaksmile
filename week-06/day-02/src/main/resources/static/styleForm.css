@@ -1,0 +1,58 @@
+body{
+    background-color: lightgray;
+    border: 0.5em;
+    border-color: #999999;
+}
+
+label{
+    color: dimgray;
+    font-family: Corbel;
+    font-size: 10px;
+    margin: 10px 0px 10px 0px ;
+    display: block;
+}
+
+input{
+    width: 100%;
+    height: 22px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+
+}
+input:focus{
+    outline-color: green;
+}
+
+form{
+    margin: 50px auto;
+    width: 300px;
+    background-color: white;
+    padding: 4%;
+}
+#login{
+    color: dimgray;
+    font-weight: bold;
+    font-family: Corbel;
+    font-size: 22px;
+}
+#password{
+    background: url(img.png) no-repeat;
+    background-position: right;
+}
+#forgot{
+    margin: 0px;
+    text-align: right;
+    color: dimgray;
+    font-size: 10px;
+    font-family: Corbel;
+}
+
+#button{
+    border-radius: 20px;
+    width: 100px;
+    height:35px;
+    color: white;
+    background-color: #332b2b;
+    border-style: solid;
+    border-color: #332b2b;
+}
