@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bank of Simba</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="utf-8" />
+</head>
+<body>
+<h1> Account details</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Type of Animal</th>
+        <th>King</th>
+        <th>Status</th>
+        <th>Status validation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="account: ${accounts}" th:object="${account}" th:style="*{king} ? 'background-color:salmon' : ''">
+        <td th:text="${accountStat.index}"></td>
+        <td th:text="*{name}"> </td>
+        <td th:text="|*{#numbers.formatDecimal(balance,1,2,'POINT')} Zebra|"></td>
+        <td th:text="*{animalType}"></td>
+        <td th:if="*{king}" th:text = 'YES'></td>
+        <td th:unless="*{king}" th:text = 'NO'></td>
+        <div th:switch="*{badOrGood}">
+            <td th:case="'Good One'" th:text="'Good One'"></td>
+            <td th:case="'Bad Guy'" th:text="'Bad Guy'"></td>
+        </div>
+        <td th:text="*{badOrGood}=='Bad Guy' ? 'BAD GUY' : 'GOOD ONE'"></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<h3>Account top up </h3>
+<form action="#" th:action="@{/list}" th:method="post">
+<label>Animal type</label>
+    <!--<input type="text" name ="typeOfAnimal"  />-->
+     <select name="typeOfAnimal" id="animalList">
+         <div th:each="account : ${accounts}" th:object="${account}">
+             <option th:value="*{animalType}" th:text="*{animalType}"></option>
+         </div>
+     </select>
+    <input type="submit" value="Top up"/>
+</form>
+<form th:action="@{/add}" th:object="${single}" th:method="post">
+    <h3>Add new bank account</h3>
+        <div><label>Name</label></div>
+        <input type="text" th:field="*{name}"/>
+        <div><label>balance</label></div>
+        <input type="number"th:value="*{balance}" name="balance"/>
+        <div><label>animal type</label></div>
+        <input type="text" th:value="*{animalType}" name="animalType"/>
+        <div><label>is King</label></div>
+        <input type="text" th:value="*{king}" name="isKing"/>
+        <div><label>Bad Guy or Good One</label></div>
+        <input type="text" th:value="*{badOrGood}" name="badOrGood"/>
+        <input type="submit" value="Add new Account"/>
+    </div>
+</form>
+</body>
+</html>
