@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GFA</title>
+</head>
+<body>
+<header>
+    <div th:text="|Counter: ${count}|"></div>
+</header>
+<div><a th:href="@{gfa/list}" th:text="list"> </a></div>
+<div><a th:href="@{gfa/add}" th:text="add"> </a></div>
+<div><a th:href="@{gfa/checker}" th:text="check"> </a></div>
+<div th:each="name : ${students}" >
+    <div th:text="*{name}"></div>
+</div>
+</body>
+</html>

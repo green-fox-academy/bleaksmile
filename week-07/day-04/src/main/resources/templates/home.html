@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Useful utilities</title>
+</head>
+<div>
+    <a th:href="@{'/useful/colored'}" th:text="colored"></a>
+    <a th:href="@{'/useful/email?address=this@is.valid'}" th:text="email"></a>
+    <a th:href="@{'/useful/encode?text=example&number=1'}" th:text="encode"></a>
+    <a th:href="@{'/useful/decode?text=example&number=1'}" th:text="decode"></a>
+
+</div>
+</body>
+</html>

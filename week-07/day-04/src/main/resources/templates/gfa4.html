@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GFA</title>
+</head>
+<body>
+<h3>Check the student</h3>
+<form action="#" method="get">
+    <label>Name</label>
+    <input type="text" th:object="${name}" name="name"/>
+</form>
+<div th:if="${name} != ''"
+     th:text="${status} ? 'Student is already in the list' : 'Student is not in the list'"></div>
+<div><a th:href="@{/gfa}">Back to main</a></div>
+</body>
+</html>
