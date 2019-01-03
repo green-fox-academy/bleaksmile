@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Todo</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <h2><a th:href="@{/todo/list}">TODOS FOR TODAY</a></h2>
+    </div>
+</div>
+</br>
+<div>
+    <a class="btn btn-primary btn-warning text-center" th:href="@{/todo/add}" th:text="'Add new todo'"></a>
+    <a class="btn btn-info" th:href="@{/todo/list?isActive=true}" th:text="'Active tasks'"> </a>
+    <a class="btn btn-success" th:href="@{/todo/assignee}" th:text="'List of Assignees'"> </a>
+</div>
+</br>
+<form method="get" th:action="@{/todo/list}">
+    <input type="search" name="search" placeholder="Search"/>
+    <input type="submit" class="btn btn-success" value="Submit"/>
+</form>
+</br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>DESCRIPTION</th>
+        <th>DONE</th>
+        <th>URGENT</th>
+        <th>DATE</th>
+        <th>ASSIGNEE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="todo : ${todos}">
+        <td id="id" th:text="${todo.getId()}"></td>
+        <td id="title"><a th:href="|${todo.id}/describe|" th:text="${todo.getTitle()}"/></td>
+        <td id="description" th:text="${todo.getDescription()}"></td>
+        <td id="done" th:if="${todo.getDone()}"><i class="glyphicon glyphicon-ok"></i></td>
+        <td th:unless="${todo.getDone()}"><i class="glyphicon glyphicon-remove"></i></td>
+        <td id="urgent" th:if="${todo.getUrgent()}"><i class="glyphicon glyphicon-ok"></i></td>
+        <td th:unless="${todo.getUrgent()}"><i class="glyphicon glyphicon-remove"></i></td>
+        <td id="date" th:text="${#dates.format(todo.getDate(), 'dd/MM/yyyy HH:mm:ss')}"></td>
+        <td id="assignee" th:text="${todo.getAssignee()!=null} ? ${todo.getAssignee().getName()} : 'No assignee'"></td>
+        <td><a type="submit" class="btn btn-danger" id="delete" th:href="|${todo.id}/delete|"
+               th:text="delete"/></button></td>
+        <td><a type="submit" class="btn btn-primary" id="edit" th:href="|${todo.id}/edit|" th:text="edit"/></button></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

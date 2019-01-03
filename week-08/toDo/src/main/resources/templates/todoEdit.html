@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit todo</title>
+</head>
+<body>
+<h1>Edit Todo</h1>
+<form action="#" th:object="${todo}" th:action="@{edit}" method="post">
+    <p>Todo title <input type="text" th:field = "*{title}" /></p>
+    <p>Description <input type="text" th:field = "*{description}" /></p>
+    <p>Urgent <input type="checkbox" th:field="*{urgent}" /></p>
+    <p>Done <input type="checkbox" th:field="*{done}" /></p>
+    <p>Assignee</p>
+    <select name="assig">
+        <div th:each="assignee: ${assignees}">
+        <option th:value="${assignee.getId()}" th:text="${assignee.getName()}"></option>
+        </div>
+    </select>
+        <input type="checkbox" th:field="*{done}" /></p>
+    <input type="hidden" th:field ="*{date}"/>
+    <p><input type="submit" value="Submit" /><a href="/todo/list" >Cancel</a> </p>
+</form>
+</body>
+</html>

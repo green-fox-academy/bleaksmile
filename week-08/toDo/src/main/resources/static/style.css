@@ -1,0 +1,15 @@
+body{
+    margin: 50px auto auto 100px;
+}
+
+table{
+
+    background-color: white;
+    margin: 20px 0 0 0;
+}
+
+td,tr{
+    border: black solid 1px;
+}
+
+
