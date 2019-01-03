@@ -1,0 +1,21 @@
+package com.frontend.frontend.models;
+
+public class Until {
+  private Integer until;
+
+  public Until() {
+  }
+
+  public Until(int until) {
+    this.until = until;
+  }
+
+  public Integer getUntil() {
+    return until;
+  }
+
+  public void setUntil(Integer until) {
+    this.until = until;
+  }
+}
+
