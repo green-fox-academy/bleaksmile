@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Post</title>
+</head>
+<body th:object="${post}">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center" th:text="*{title}"></h2>
+        </div>
+    </div>
+    <div th:text="*{content}"></div>
+
+</body>
+</html>
