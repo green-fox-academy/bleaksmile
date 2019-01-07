@@ -4,16 +4,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Result {
-  private Integer result;
+  private Object result;
 
-  public Result(Integer result) {
+  public Result(Object result) {
     this.result = result;
   }
 
   public Result() {
   }
 
-  public Integer getResult() {
+  public Object getResult() {
     return result;
   }
 

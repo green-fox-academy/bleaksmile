@@ -6,7 +6,7 @@ public class Until {
   public Until() {
   }
 
-  public Until(int until) {
+  public Until(Integer until) {
     this.until = until;
   }
 
@@ -16,6 +16,11 @@ public class Until {
 
   public void setUntil(Integer until) {
     this.until = until;
+  }
+
+  @Override
+  public String toString() {
+    return "until=" + until;
   }
 }
 
